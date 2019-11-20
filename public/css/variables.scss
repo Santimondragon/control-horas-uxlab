@@ -1,0 +1,27 @@
+@import 'fonts';
+
+$pink: #CF198B;
+$blue: #000757;
+$fontGray: #999999;
+$borderGray: #bbbbbb;
+$shadow: #0000004d;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: $blue;
+    font-family: 'Bran', sans-serif;
+    font-weight: 300;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: all 0.15s ease-in-out;
+
+    &::placeholder {
+        color: $blue;
+        font-family: 'Bran', sans-serif;
+    }
+}

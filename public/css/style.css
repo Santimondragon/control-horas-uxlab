@@ -1,0 +1,594 @@
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_thin.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_thin_it.otf);
+  font-weight: 100i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_light.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_light_it.otf);
+  font-weight: 200i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_reg.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_reg_it.otf);
+  font-weight: 300i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_med.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_med_it.otf);
+  font-weight: 400i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_bld.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_bld_it.otf);
+  font-weight: 500i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_blk.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_blk_it.otf);
+  font-weight: 600i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_thin.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_thin_it.otf);
+  font-weight: 100i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_light.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_light_it.otf);
+  font-weight: 200i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_reg.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_reg_it.otf);
+  font-weight: 300i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_med.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_med_it.otf);
+  font-weight: 400i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_bld.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_bld_it.otf);
+  font-weight: 500i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_blk.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_blk_it.otf);
+  font-weight: 600i;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #000757;
+  font-family: 'Bran', sans-serif;
+  font-weight: 300;
+  list-style: none;
+  scroll-behavior: smooth;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+*::-webkit-input-placeholder {
+  color: #000757;
+  font-family: 'Bran', sans-serif;
+}
+
+*:-ms-input-placeholder {
+  color: #000757;
+  font-family: 'Bran', sans-serif;
+}
+
+*::-ms-input-placeholder {
+  color: #000757;
+  font-family: 'Bran', sans-serif;
+}
+
+*::placeholder {
+  color: #000757;
+  font-family: 'Bran', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+body#login {
+  width: 100vw;
+  height: 100vh;
+  padding: 47px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body#login #logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body#login #login-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body#login #login-form .form-item {
+  width: 100%;
+  position: relative;
+}
+
+body#login #login-form .form-item #eye {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
+
+body#login #login-form input,
+body#login #login-form button {
+  width: 100%;
+  height: 47px;
+  border-radius: 35px;
+  -webkit-box-shadow: 0px 2px 6px -3px #0000004d;
+          box-shadow: 0px 2px 6px -3px #0000004d;
+}
+
+body#login #login-form input {
+  border: 1px solid #E2E2E2;
+  background: #fafafa;
+  margin-bottom: 25px;
+  padding: 0 20px 4px;
+  font-size: 17px;
+  color: #000757;
+}
+
+body#login #login-form button {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  background: #000757;
+}
+
+body#login #login-form button:hover {
+  -webkit-box-shadow: 0px 5px 12px -5px #0000004d;
+          box-shadow: 0px 5px 12px -5px #0000004d;
+}
+
+body#app {
+  height: 100vh;
+  background: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body#app #overview {
+  padding: 25px 30px;
+  background: white;
+  height: 35%;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 6px -3px #0000004d;
+          box-shadow: 0px 2px 6px -3px #0000004d;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body#app #overview .top-bar {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body#app #overview .top-bar img {
+  height: 22px;
+  margin-left: 7%;
+}
+
+body#app #overview .top-bar .logo {
+  height: 24px;
+  margin: 0;
+}
+
+body#app #overview .top-bar .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body#app #overview .time {
+  width: 100%;
+  margin-bottom: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body#app #overview .time .hours {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 2em;
+  color: #999999;
+  margin-bottom: 20px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body#app #overview .time .hours b {
+  font-size: 2em;
+  font-weight: 700;
+  color: #000757;
+}
+
+body#app #overview .time .bar {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 10px;
+  border: solid 1px #bbbbbb;
+  border-radius: 20px;
+}
+
+body#app #overview .time .bar .progress {
+  height: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#000757), to(#CF198B));
+  background: linear-gradient(to right, #000757, #CF198B);
+  border-radius: 20px 0px 0px 20px;
+  width: 40%;
+}
+
+body#app #dashboard {
+  padding: 25px 30px 0;
+  overflow-x: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+body#app #dashboard h3 {
+  font-weight: 500;
+  font-size: 15px;
+  color: #999999;
+  margin-bottom: 15px;
+}
+
+body#app #dashboard #activities {
+  width: 100%;
+}
+
+body#app #dashboard #activities .activity {
+  background: white;
+  padding: 20px 12px 20px 17px;
+  height: 70px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 6px -3px #0000004d;
+          box-shadow: 0px 2px 6px -3px #0000004d;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body#app #dashboard #activities .activity::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 6px;
+  border-radius: 5px 0 0 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000757), to(#CF198B));
+  background: linear-gradient(to bottom, #000757, #CF198B);
+}
+
+body#app #dashboard #activities .activity .date {
+  height: 100%;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body#app #dashboard #activities .activity .date p {
+  font-weight: 600;
+}
+
+body#app #dashboard #activities .activity .date .day {
+  margin-bottom: -4px;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000757;
+}
+
+body#app #dashboard #activities .activity .date .month {
+  font-size: 15px;
+  line-height: 18px;
+  color: #000757;
+}
+
+body#app #dashboard #activities .activity .name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000757;
+}
+
+body#app #dashboard #activities .activity .duration {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000757;
+}
+
+body#app #dashboard #activities .msg {
+  width: 100%;
+  margin-top: 35%;
+  font-size: 48px;
+  font-weight: 200;
+  color: #dfdfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body#app #modal-logout {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #0000004d;
+  z-index: 9999;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body#app #modal-logout.shown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body#app #modal-logout form {
+  background: white;
+  border-radius: 6px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "p p" "b1 b2";
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 6px -3px #0000004d;
+          box-shadow: 0px 2px 6px -3px #0000004d;
+  width: 80%;
+}
+
+body#app #modal-logout form p {
+  padding: 28px 35px;
+  text-align: center;
+  font-size: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: p;
+}
+
+body#app #modal-logout form button {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #bbbbbb;
+  background: white;
+  font-size: 14px;
+}
+
+body#app #modal-logout form .logout {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: b1;
+  border-right: 1px solid #bbbbbb;
+}
+
+body#app #modal-logout form .go-back {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: b2;
+  font-weight: 600;
+  color: white;
+  background: #000757;
+  border: solid 2px #000757;
+}
+/*# sourceMappingURL=style.css.map */

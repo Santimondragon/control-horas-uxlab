@@ -1,0 +1,326 @@
+@import 'fonts';
+@import 'variables';
+
+body {
+    overflow: hidden;
+
+    &#login {
+        width: 100vw;
+        height: 100vh;
+        padding: 47px;
+        padding-bottom: 100px;
+
+        //Flex Box
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        #logo {
+            flex: 1 1 auto;
+            width: 70%;
+
+            //Flex Box
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #login-form {
+            width: 100%;
+
+            //Flex Box
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            .form-item {
+                width: 100%;
+                position: relative;
+
+                #eye {
+                    position: absolute;
+                    top: 18px;
+                    right: 20px;
+                }
+            }
+
+            input,
+            button {
+                width: 100%;
+                height: 47px;
+                border-radius: 35px;
+                box-shadow: 0px 2px 6px -3px $shadow;
+            }
+
+            input {
+                border: 1px solid #E2E2E2;
+                background: #fafafa;
+                margin-bottom: 25px;
+                padding: 0 20px 4px;
+                font-size: 17px;
+                color: $blue;
+            }
+
+            button {
+                color: white;
+                font-size: 15px;
+                font-weight: 500;
+                letter-spacing: 0.4em;
+                background: $blue;
+
+                &:hover {
+                    box-shadow: 0px 5px 12px -5px $shadow;
+                }
+            }
+        }
+    }
+
+    &#app {
+        height: 100vh;
+        background: #F7F7F7;
+
+        //Flex Box
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        #overview {
+            padding: 25px 30px;
+            background: white;
+            height: 35%;
+            width: 100%;
+            box-shadow: 0px 2px 6px -3px $shadow;
+            z-index: 999;
+
+            //Flex Box
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .top-bar {
+                margin-bottom: 20px;
+                //Flex Box
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    height: 22px;
+                    margin-left: 7%;
+                }
+
+                .logo {
+                    height: 24px;
+                    margin: 0;
+                }
+
+                .name {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+
+            .time {
+                width: 100%;
+                margin-bottom: 20px;
+                flex: 1 1 auto;
+
+                //Flex Box
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                .hours {
+                    flex: 1 1 auto;
+                    font-size: 2em;
+                    color: $fontGray;
+                    margin-bottom: 20px;
+                    font-weight: 300;
+
+                    //Flex Box
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    b {
+                        font-size: 2em;
+                        font-weight: 700;
+                        color: $blue;
+                    }
+                }
+
+                .bar {
+                    box-sizing: content-box;
+                    height: 10px;
+                    border: solid 1px $borderGray;
+                    border-radius: 20px;
+
+                    .progress {
+                        height: 10px;
+                        background: linear-gradient(to right, $blue, $pink);
+                        border-radius: 20px 0px 0px 20px;
+                        width: 40%;
+                    }
+                }
+            }
+        }
+
+        #dashboard {
+            padding: 25px 30px 0;
+            overflow-x: auto;
+            flex: 1 1 auto;
+
+            h3 {
+                font-weight: 500;
+                font-size: 15px;
+                color: $fontGray;
+                margin-bottom: 15px;
+            }
+
+            #activities {
+                width: 100%;
+
+                .activity {
+                    background: white;
+                    padding: 20px 12px 20px 17px;
+                    height: 70px;
+                    margin-bottom: 15px;
+                    border-radius: 5px;
+                    box-shadow: 0px 2px 6px -3px $shadow;
+                    position: relative;
+
+                    //Flex Box
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        left: 0;
+                        height: 100%;
+                        width: 6px;
+                        border-radius: 5px 0 0 5px;
+                        background: linear-gradient(to bottom, $blue, $pink)
+                    }
+
+                    .date {
+                        height: 100%;
+                        margin-right: 20px;
+
+                        //Flex Box
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        p {
+                            font-weight: 600;
+                        }
+
+                        .day {
+                            margin-bottom: -4px;
+                            font-size: 30px;
+                            line-height: 35px;
+                            color: $blue;
+                        }
+
+                        .month {
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: $blue;
+                        }
+                    }
+
+                    .name {
+                        flex: 1 1 auto;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: $blue;
+                    }
+
+                    .duration {
+                        font-weight: 600;
+                        font-size: 30px;
+                        line-height: 35px;
+                        color: $blue;
+                    }
+                }
+
+                .msg {
+                    width: 100%;
+                    margin-top: 35%;
+                    font-size: 48px;
+                    font-weight: 200;
+                    color: #dfdfdf;
+
+                    //Flex Box
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+        }
+
+        #modal-logout {
+            display: none;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: $shadow;
+            z-index: 9999;
+
+            //Flex Box
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &.shown {
+                display: flex;
+            }
+
+            form {
+                background: white;
+                border-radius: 6px;
+                display: grid;
+                grid-template-areas:
+                    "p p"
+                    "b1 b2";
+                overflow: hidden;
+                box-shadow: 0px 2px 6px -3px $shadow;
+                width: 80%;
+
+                p {
+                    padding: 28px 35px;
+                    text-align: center;
+                    font-size: 20px;
+                    grid-area: p;
+                }
+
+                button {
+                    width: 100%;
+                    height: 50px;
+                    border-top: 1px solid $borderGray;
+                    background: white;
+                    font-size: 14px;
+                }
+
+                .logout {
+                    grid-area: b1;
+                    border-right: 1px solid $borderGray;
+                }
+
+                .go-back {
+                    box-sizing: content-box;
+                    grid-area: b2;
+                    font-weight: 600;
+                    color: white;
+                    background: $blue;
+                    border: solid 2px $blue;
+                }
+            }
+        }
+    }
+}

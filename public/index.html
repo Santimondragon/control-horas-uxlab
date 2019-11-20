@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/favicon-uxlab-gradient.png">
+    <title>Control de Horas</title>
+</head>
+
+<body id="app">
+    <section id="overview">
+        <article class="top-bar">
+            <img class="logo" src="./images/logo.svg" alt="Logo">
+            <img id="logout" src="./images/logout.svg" alt="Logout">
+        </article>
+        <article class="time">
+            <span class="hours">
+                <b id="totalHours">0h</b>
+                /90
+            </span>
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+        </article>
+    </section>
+    <section id="dashboard">
+        <h3>ACTIVIDAD</h3>
+        <ul id="activities">
+        </ul>
+    </section>
+    <section id="modal-logout">
+        <form method="post" action="/logout">
+            <p>¿Deseas cerrar sesión?</p>
+            <button type="submit" class="logout">SI, CERRAR</button>
+            <button type="button" class="go-back">NO, VOLVER</button>
+        </form>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

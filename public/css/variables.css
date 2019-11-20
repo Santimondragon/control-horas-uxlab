@@ -1,0 +1,109 @@
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_thin.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_thin_it.otf);
+  font-weight: 100i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_light.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_light_it.otf);
+  font-weight: 200i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_reg.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_reg_it.otf);
+  font-weight: 300i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_med.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_med_it.otf);
+  font-weight: 400i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_bld.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_bld_it.otf);
+  font-weight: 500i;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_blk.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Bran;
+  src: url(../fonts/Brandon_blk_it.otf);
+  font-weight: 600i;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: #000757;
+  font-family: 'Bran', sans-serif;
+  font-weight: 300;
+  list-style: none;
+  scroll-behavior: smooth;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+*::-webkit-input-placeholder {
+  color: #000757;
+  font-family: 'Bran', sans-serif;
+}
+
+*:-ms-input-placeholder {
+  color: #000757;
+  font-family: 'Bran', sans-serif;
+}
+
+*::-ms-input-placeholder {
+  color: #000757;
+  font-family: 'Bran', sans-serif;
+}
+
+*::placeholder {
+  color: #000757;
+  font-family: 'Bran', sans-serif;
+}
+/*# sourceMappingURL=variables.css.map */
